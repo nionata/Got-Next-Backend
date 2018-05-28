@@ -28,6 +28,7 @@ public class Server {
 			number = sockIn.nextInt();
 			int temp = number * 2;
 			sockOut.println(temp);
+			System.out.println("New input from client: " + number + "\nReturning: " + temp);
 		} while(number != 0);
 		
 		serverSocket.close();
